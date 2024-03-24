@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Google Sheet App</title>
-  </head>
-  <body>
-    <iframe
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTur0uHttIse3rrWWTaOXYL7Q8JW5IZhp2bCgAfF3SEOxjExDrx056DKFsgwLUwL9yYgO8eqj1903Jk/pubhtml"
-      width="100%"
-      height="500"
-      frameborder="0"
-      style="border: 0;"
-      allowfullscreen
-    ></iframe>
-  </body>
+
+<head>
+  <title>My Google Sheet App</title>
+</head>
+
+<body>
+  <div id="app">
+    <input type="number" id="savingsRate" placeholder="Savings Rate">
+    <input type="number" id="withdrawalRate" placeholder="Withdrawal Rate">
+    <input type="number" id="years" placeholder="Years">
+    <button id="calculate">Calculate</button>
+    <p id="projectedSavings">Projected Savings: </p>
+    <table id="savingsTable">
+      <tr>
+        <th>Year</th>
+        <th>Total Savings</th>
+        <th>Year's Total Gain</th>
+      </tr>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>
